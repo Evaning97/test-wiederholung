@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!-- CSS Datei mit HTML Datei verknüpfen -->
     <title>Startseite</title>
 </head>
 <body>
-    <header>
+    <header> <!-- header = Kopfelement der webseite, häufig auf allen Unterseiten gleich -->
         <nav>
             <ul>
                 <li>Profile</li>
@@ -16,18 +16,20 @@
         </nav>
     </header>
     <main>
-        <h1 class="text_red">Überschrift</h1>
+        <h1 class="text_red">Überschrift</h1> <!-- Überschriften h1 - h6 -->
         <h3>Überschrift</h3>
         <h6 id="test">Überschrift</h6>
-        <p class="text_red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dignissimos ut accusantium iste quasi recusandae qui voluptas id, ea eos quaerat error alias, a consequatur animi. Unde qui dolor reprehenderit.</p>
+        <p class="text_red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dignissimos ut accusantium iste quasi recusandae qui voluptas id, ea eos quaerat error alias, a consequatur animi. Unde qui dolor reprehenderit.</p> <!-- p = paragraph = text -->
         <a href="https://google.de">Google</a>
-        <div>leerer Container - ohne Bedeutung</div>
+
+        <article>leerer Container - mit Bedeutung (am wichtigsten)</article> <!-- am besten nur ein article pro Seite -->
         <section>leerer Container - mit Bedeutung</section>
-        <article>leerer Container - mit Bedeutung (am wichtigsten)</article>
+        <div>leerer Container - ohne Bedeutung</div>
 
         <h2>semantisches HTML</h2>
+        <p>semantisches HTML beschreibt die Bedeutung der einzelnen HTML Elemente und die Wichtigkeit dessen Inhalts.</p>
 
-        <h1>Überschrift</h1>
+        <h3>Überschrift</h3>
         <article>
             <section>
                 <div>
@@ -44,12 +46,12 @@
             </section>
         </article>
 
-        <ul>
-            <li>Punkt 1</li>
+        <ul> <!-- ungeordnete liste (unordered list) -->
+            <li>Punkt 1</li> <!-- List Element -->
             <li>Punkt 2</li>
         </ul>
 
-        <ol>
+        <ol> <!-- geordnete liste (ordered list) -->
             <li>Punkt 1</li>
             <li>Punkt 2</li>
         </ol>
@@ -57,15 +59,18 @@
         
 
         <img src="https://images.unsplash.com/photo-1741800465167-0c276ad75e08?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Hier sollte eigentlich ein Bild sein">
+        <!-- img = Bild einbinden / src = Bildquelle / alt = Alternativ Text der angezeigt wird wenn das bild nicht geladen werden kann -->
 
 
     </main>
-    <footer>
+    <footer> <!-- footer = Fußelement der webseite, häufig auf allen Unterseiten gleich -->
         <nav>
             <ul>
                 <li>Impressum</li>
                 <li>Datenschutz</li>
-                <li><a href="impressum.html">Impressum</a></li>
+                <li>
+                    <a href="impressum.html">Impressum</a> <!-- a = Link auf eine andere Seite oder Datei (egal ob extern oder eigene Seite) -->
+                </li>
             </ul>
         </nav>
     </footer>
